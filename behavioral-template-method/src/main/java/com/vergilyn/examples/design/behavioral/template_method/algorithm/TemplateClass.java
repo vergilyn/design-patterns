@@ -1,6 +1,7 @@
-package com.vergilyn.examples.design.behavioral.template_method;
+package com.vergilyn.examples.design.behavioral.template_method.algorithm;
 
 import com.alibaba.fastjson.JSON;
+import com.vergilyn.examples.design.behavioral.template_method.bean.StudentBean;
 
 /**
  * 模板类
@@ -9,15 +10,11 @@ import com.alibaba.fastjson.JSON;
  * @date 2017/1/2
  */
 public abstract class TemplateClass {
-    /**
-     * 子类扩展方法：保存前
-     */
-    public void saveBefore(StudentBean bean){
 
+    public void saveBefore(StudentBean bean){
+        System.out.println(this.getClass().getSimpleName() + ": saveBefore()...");
     }
-    /**
-     * 子类扩展方法：保存后
-     */
+
     public abstract void saveAfter(StudentBean bean);
 
     /**

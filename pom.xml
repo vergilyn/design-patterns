@@ -12,6 +12,7 @@
         <module>behavioral-template-method</module>
         <module>structural-proxy</module>
         <module>creational-factory</module>
+        <module>behavioral-observer</module>
     </modules>
 
     <repositories>

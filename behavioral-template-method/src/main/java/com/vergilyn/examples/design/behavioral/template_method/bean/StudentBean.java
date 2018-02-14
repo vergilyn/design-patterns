@@ -1,9 +1,9 @@
-package com.vergilyn.examples.design.behavioral.template_method;
+package com.vergilyn.examples.design.behavioral.template_method.bean;
 
 /**
  * 学生信息
  * @author VergiLyn
- * @bolg http://www.cnblogs.com/VergiLyn/p/6243626.html
+ * @blog http://www.cnblogs.com/VergiLyn/p/6243626.html
  * @date 2017/1/2
  */
 public class StudentBean {
