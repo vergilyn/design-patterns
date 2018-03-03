@@ -13,6 +13,7 @@
         <module>structural-proxy</module>
         <module>creational-factory</module>
         <module>behavioral-observer</module>
+        <module>integration-pubsub</module>
     </modules>
 
     <repositories>
@@ -48,6 +49,11 @@
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>3.2.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>24.0-jre</version>
         </dependency>
 		
         <dependency>

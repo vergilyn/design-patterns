@@ -1,4 +1,5 @@
 # Design Pattern
+备注: *.puml是PlantUML绘制类图的文件.  
 
 github see:  
 　　https://github.com/iluwatar/java-design-patterns

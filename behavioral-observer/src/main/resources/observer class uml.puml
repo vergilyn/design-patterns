@@ -1,0 +1,30 @@
+@startuml
+
+title observer-pattern 类图
+
+interface AbstractSubject<<抽象主题>> {
+    + String name();
+    + void add(AbstractObserver observer);
+    + void del(AbstractObserver observer);
+    + void publishMessage(String message);
+}
+
+class Subject<<具体主题（被观察者）>>{
+    - final Set<AbstractObserver> observers = Sets.newLinkedHashSet();
+    - final String name
+}
+
+interface AbstractObserver<<抽象观察者>> {
+    + String name();
+    + void onMessage(AbstractSubject subject, String msg);
+}
+
+class Observer<<具体观察者>>{
+    - final String name;
+}
+
+AbstractSubject <|-- Subject
+AbstractObserver <|-- Observer
+AbstractSubject -right--> AbstractObserver : 依赖
+
+@enduml
