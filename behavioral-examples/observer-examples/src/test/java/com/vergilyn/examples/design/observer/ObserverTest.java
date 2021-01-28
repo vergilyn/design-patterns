@@ -1,7 +1,5 @@
 package com.vergilyn.examples.design.observer;
 
-import java.util.concurrent.CountDownLatch;
-
 import org.junit.jupiter.api.Test;
 
 /**
@@ -26,6 +24,5 @@ public class ObserverTest {
 
         subject.publishMessage("some message");
 
-        new CountDownLatch(1).await();
     }
 }

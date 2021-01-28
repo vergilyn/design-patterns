@@ -7,18 +7,19 @@ package com.vergilyn.examples.design.observer;
  * @date 2021-01-26
  */
 public class Observer implements AbstractObserver {
-    private final String name;
+	private final String name;
 
-    public Observer(String name) {
-        this.name = name;
-    }
+	public Observer(String name) {
+		this.name = name;
+	}
 
-    @Override
-    public String name() {
-        return name;
-    }
+	@Override
+	public String name() {
+		return name;
+	}
 
-    public void onMessage(AbstractSubject subject, String msg) {
-        System.out.println(String.format("observer[%s]: subject[%s], message[%s]", name, subject.name(), msg));
-    }
+	@Override
+	public void onMessage(AbstractSubject subject, String msg) {
+		System.out.printf("observer[%s]: subject[%s], message[%s] \r\n", name, subject.name(), msg);
+	}
 }

@@ -7,8 +7,11 @@ package com.vergilyn.examples.design.observer;
  * @date 2021-01-26
  */
 public interface AbstractSubject {
-    String name();
-    void add(AbstractObserver observer);
-    void del(AbstractObserver observer);
-    void publishMessage(String message);
+	String name();
+
+	void add(AbstractObserver observer);
+
+	void del(AbstractObserver observer);
+
+	void publishMessage(String message);
 }

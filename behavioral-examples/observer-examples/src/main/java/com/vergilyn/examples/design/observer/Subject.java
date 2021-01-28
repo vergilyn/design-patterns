@@ -11,35 +11,34 @@ import com.google.common.collect.Sets;
  * @date 2021-01-26
  */
 public class Subject implements AbstractSubject {
-    private final Set<AbstractObserver> observers = Sets.newLinkedHashSet();
+	private final Set<AbstractObserver> observers = Sets.newLinkedHashSet();
 
-    private final String name;
+	private final String name;
 
-    public Subject(String name) {
-        this.name = name;
-    }
+	public Subject(String name) {
+		this.name = name;
+	}
 
-    @Override
-    public String name() {
-        return name;
-    }
+	@Override
+	public String name() {
+		return name;
+	}
 
-    @Override
-    public void add(AbstractObserver observer) {
-        observers.add(observer);
-    }
+	@Override
+	public void add(AbstractObserver observer) {
+		observers.add(observer);
+	}
 
-    @Override
-    public void del(AbstractObserver observer) {
-        observers.remove(observer);
-    }
+	@Override
+	public void del(AbstractObserver observer) {
+		observers.remove(observer);
+	}
 
-
-    @Override
-    public void publishMessage(String message) {
-        for (AbstractObserver observer : observers){
-            observer.onMessage(this, message);
-        }
-    }
+	@Override
+	public void publishMessage(String message) {
+		for (AbstractObserver observer : observers) {
+			observer.onMessage(this, message);
+		}
+	}
 
 }

@@ -11,14 +11,14 @@ package com.vergilyn.examples.design.singleton.singleton_05;
  * @date 2021-01-26
  */
 public class LazySecInner {
-	private static class InnerClass {
+	private static class Holder {
 		private static final LazySecInner INSTANCE = new LazySecInner();
 	}
 
 	private LazySecInner() {
 	}
 
-	public static final LazySecInner getInstance() {
-		return InnerClass.INSTANCE;
+	public static LazySecInner getInstance() {
+		return Holder.INSTANCE;
 	}
 }
