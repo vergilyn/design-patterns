@@ -10,5 +10,5 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>strategy-examples</artifactId>
+    <artifactId>chain-of-filter-examples</artifactId>
 </project>

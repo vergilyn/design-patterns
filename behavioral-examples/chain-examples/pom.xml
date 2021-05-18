@@ -10,5 +10,5 @@
         <version>${revision}</version>
     </parent>
 
-    <artifactId>strategy-examples</artifactId>
+    <artifactId>chain-examples</artifactId>
 </project>

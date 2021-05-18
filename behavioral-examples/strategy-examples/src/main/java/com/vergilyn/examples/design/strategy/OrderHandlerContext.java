@@ -25,10 +25,11 @@ public class OrderHandlerContext {
 	private final Map<OrderTypeEnum, AbstractHandler> map = Maps.newConcurrentMap();
 
 	private OrderHandlerContext(){
-		// FIXME 违背OCP，当增加handler时需要修改此代码，可以通过reflect、custom-annotation等机制
+		// FIXME 违背OCP，当增加handler时需要修改此代码（以及增加 Enum），可以通过reflect、custom-annotation等机制
 		map.put(NORMAL, new NormalHandler());
 		map.put(GROUP, new GroupHandler());
 		map.put(PROMOTION, new PromotionHandler());
+
 	}
 
 	public static OrderHandlerContext getInstance(){

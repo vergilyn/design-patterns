@@ -16,5 +16,7 @@
         <module>template-method-examples</module>
         <module>strategy-router-examples</module>
         <module>strategy-examples</module>
+        <module>chain-examples</module>
+        <module>chain-of-filter-examples</module>
     </modules>
 </project>

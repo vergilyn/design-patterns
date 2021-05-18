@@ -27,7 +27,7 @@ blog see:
 7) Proxy, 代理模式
 
 ### 1.3. behavioral, 行为型
-1) Chain of Resp, 职责链模式
+1) Chain of Responsibility, 职责链模式
 2) Command, 命令模式
 3) Interpreter, 解释器模式
 4) Iterator, 迭代器模式
@@ -40,7 +40,5 @@ blog see:
 11) Visitor, 访问者模式
 
 
-## 1. proxy, 代理模式
- see:  
- 　　Java的三种代理模式简述: http://www.cnblogs.com/flashsun/p/7286475.html
- 
+##
+- [三种代理模式简述](http://www.cnblogs.com/flashsun/p/7286475.html)
