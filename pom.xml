@@ -26,7 +26,7 @@
         <apache-common-io.version>2.6</apache-common-io.version>
         <apache-common-beanutils.version>1.9.4</apache-common-beanutils.version>
         <apache-common-fileupload.version>1.4</apache-common-fileupload.version>
-        <apache-common-httpclient.version>4.5.10</apache-common-httpclient.version>
+        <apache-common-httpclient.version>4.5.13</apache-common-httpclient.version>
         <apache-common-collections4.version>4.4</apache-common-collections4.version>
 
         <cglib.version>3.3.0</cglib.version>
