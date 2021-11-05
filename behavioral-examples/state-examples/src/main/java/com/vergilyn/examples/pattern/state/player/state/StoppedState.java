@@ -14,6 +14,7 @@ public class StoppedState extends AbstractPlayerState {
 		if (action == PLAY_OR_PAUSE) {
 			player.play();
 			player.setState(new PlayingState(player));
+			return;
 		}
 
 		throw new IllegalArgumentException(

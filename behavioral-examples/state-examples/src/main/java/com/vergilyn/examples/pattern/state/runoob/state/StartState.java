@@ -7,14 +7,17 @@ public class StartState implements AbstractState {
 
 	@Override
 	public void doAction(Context context) {
-		System.out.println("Player is in start state");
+		final StopState target = new StopState();
 
-		// 设置状态
-		context.setState(this);
+		System.out.printf("current-state[%s]  >>>> do action >>>> target-state[%s].\n",
+		                  context.getState(), target);
+
+		// 设置状态(或 切换状态)
+		context.setState(target);
 	}
 
 	@Override
 	public String toString(){
-		return "Start AbstractState";
+		return "start";
 	}
 }
