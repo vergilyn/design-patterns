@@ -2,7 +2,7 @@
 备注: *.puml是PlantUML绘制类图的文件.  
 
 github see:  
-　　https://github.com/iluwatar/java-design-patterns
+　　- <https://github.com/iluwatar/java-design-patterns>
 
 blog see:  
 　　设计模式建议学习顺序: http://www.cnblogs.com/guola/archive/2013/01/02/2841997.html ,  

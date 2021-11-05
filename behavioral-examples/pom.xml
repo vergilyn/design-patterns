@@ -18,5 +18,6 @@
         <module>strategy-examples</module>
         <module>chain-examples</module>
         <module>chain-of-filter-examples</module>
+        <module>state-examples</module>
     </modules>
 </project>
